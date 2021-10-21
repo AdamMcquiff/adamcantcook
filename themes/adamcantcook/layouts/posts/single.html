@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" }}
+
+<body>
+    {{ partial "header.html" }}
+
+    <main>
+        <p>
+            {{ dateFormat "January 2, 2006" .Params.published }}
+        </p>
+
+        <h1>{{.Title}}</h1>
+
+        <!-- ToDo: social media links  -->
+        
+        <p>{{ .Params.synopsis }}</p>
+
+        {{ .Content }}
+        
+        <h2>Watch the full video</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{.Params.videoId}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+
+    {{ partial "footer.html" }}
+</body> 
+
+</html> 

@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "import": "npx contentful-hugo",
+    "start": "hugo server -D",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

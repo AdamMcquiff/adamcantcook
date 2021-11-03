@@ -3,6 +3,7 @@
 @import 'typography';
 
 // Components
+@import 'components/hero-banner';
 @import 'components/youtube-embed';
 @import 'components/overlay';
 
@@ -12,4 +13,7 @@
 
 * {
     box-sizing: border-box;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

@@ -8,16 +8,25 @@
     position: fixed;
     width: 100vw;
     top: 0;
-    z-index: 1;
-    background-color: red;
+    z-index: 2;
 
     &.open {
         transform: translateX(calc(-100% + 96px));
     }
 
+    &-logo {
+        font-weight: 700;
+        color: white;
+        font-size: 25px;
+        line-height: 0;
+        text-decoration: none;
+        
+    }
+
     &-nav-toggle {
         width: 32px;
-        height: 32px;
+        height: 32px; 
+        display: contents;
     }
 
     &-nav {

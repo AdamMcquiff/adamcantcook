@@ -4,7 +4,16 @@
     background-color: $dark-grey;
 
     p {
-        color: white;
+        color: $grey;
         margin: 0;
+    }
+
+    &-social {
+        margin-bottom: 1em;
+
+        a {
+            display: inline-block;
+            margin: 0 .25em;
+        }
     }
 }
